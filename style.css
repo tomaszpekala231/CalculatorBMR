@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%; 
+}
+  
+body {
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 60rem;
+    margin: auto;
+  
+}
+
+.ml-5 {
+    margin-left: .5rem;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1.4rem;
+}
+.alert.error{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert.success{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* ============ HEADER ============  */
+.header {
+    background-color: #343A40;
+    height: 4.5rem;
+}
+
+.nav {
+    padding: .5rem 1rem;
+}
+
+.nav__title {
+    display: block;
+    text-decoration: none;
+    font-size:2.2rem;
+    color:#fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main {
+    margin-top:5rem;
+    padding: 2rem;
+}
+.form-group label {
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 70px;
+}
+.form-control {
+    display: inline-block;
+    width: 70%;
+    height: calc(1.2em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: 1rem 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn {
+    display: block;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #343A40;
+    padding: .5rem 1rem;
+    font-size:1.5rem;
+    border-radius:2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    width: 73%;
+}
+.btn:hover {
+    background: #343A40;
+    color: #fff;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.main__bottom {
+    margin: auto;
+    margin-top: 5rem;
+    max-width: 80rem;
+    
+}
+
+/* CARD CUSTOM  */
+.card {
+    border: 2px solid #343A40;
+}
+
+.card__header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #343A40;
+    border-bottom: 1px solid #343A40;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.card__body {
+    padding: 2rem;
+}
+
+/* FORM CUSTOM */
+.radio-custom {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.radio-custom:not(:first-child) {
+    margin-left: 3rem;
+}
+/* Hide the browser's default radio button */
+.radio-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-custom:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radio-custom input:checked ~ .checkmark {
+    background-color: #343A40;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-custom input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-custom .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  
+
+.select-sex  {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.select-sex span {
+    font-size: 2rem;
+}
+
+.selectDiv {
+    text-align: center;
+}
+.selectDiv p {
+    font-size: 1.8rem;
+}
+.custom-select {
+    display: inline-block;
+    width: 73%;
+    height: calc(1.2em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: .5rem 0 .5rem -1rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.custom-select option:hover {
+    display: block;
+    background: #000 !important;
+}
+
+/* RESULTS */
+.loading {
+    text-align: center;
+    display: none;
+}
+.result {
+    display: none;
+}
+.result__goal {
+    font-size: 1.8rem;
+}
+.result__calories {
+    font-size: 3rem;
+    color: #0000b3;
+    letter-spacing: 2px;
+}
+.macro {
+    margin-top: .5rem;
+    font-size: 1.6rem;
+}
+.information {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+    .radio-custom {
+        padding-left: 2.8rem;
+    }
+}
